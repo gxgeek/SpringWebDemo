@@ -6,9 +6,10 @@
     </head>
     <body>
        <p> 欢迎</p>
-        <#list  userList as User>
-        <p>ID：${(User.userId)!}</p>
-        <p>姓名：${(User.userName) !}</p>
-        </#list>
+
+        <#--<#list  userList as User>-->
+        <#--<p>ID：${User.userId!"}</p>-->
+        <#--<p>姓名：${User.userName !"}</p>-->
+        <#--</#list>-->
     </body>
 </html>

@@ -24,6 +24,21 @@
 
 	<import resource="spring-mybatis.xml"/>
 
+
+
+	<!-- 配置线程池 -->
+	<bean id ="taskExecutor"  class ="org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor" >
+		<!-- 线程池维护线程的最少数量 -->
+		<property name ="corePoolSize" value ="20" />
+		<!-- 线程池维护线程所允许的空闲时间   单位毫秒-->
+		<property name ="keepAliveSeconds" value ="30000" />
+		<!-- 线程池维护线程的最大数量 -->
+		<property name ="maxPoolSize" value ="5000" />
+		<!-- 线程池所使用的缓冲队列 -->
+		<property name ="queueCapacity" value ="1000" />
+	</bean>
+
+
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
 		<property name = "dataSource" ref="dataSource"/>
 	</bean>

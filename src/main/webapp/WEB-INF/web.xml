@@ -50,7 +50,6 @@
     <url-pattern>*.js</url-pattern>
     <url-pattern>*.woff</url-pattern>
     <url-pattern>*.ttf</url-pattern>
-    <url-pattern>*.json</url-pattern>
   </servlet-mapping>
 
 
