@@ -1,4 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
@@ -6,9 +5,11 @@
     </head>
     <body>
        <p> 欢迎</p>
-        <#list  userList as User>
+<#if userList1?exists &&userList1.size != 0>
+        <#list  userList1 as User>
         <p>ID：${(User.userId)!}</p>
         <p>姓名：${(User.userName) !}</p>
         </#list>
+</#if>
     </body>
 </html>

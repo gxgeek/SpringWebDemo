@@ -67,6 +67,7 @@
 					<property name="prefix" value="" />
 					<property name="suffix" value=".ftl" />
 					<property name="contentType" value="text/html; charset=utf-8" />
+					<property name="viewClass" value="com.gx.extend.MyFreeMarkerView" />
 				</bean>
 			</list>
 		</property>

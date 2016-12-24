@@ -19,6 +19,10 @@ import javax.servlet.http.HttpServletResponse;
 public class BlogContrller {
 @Autowired
 private BlogService blogService;
+    @RequestMapping(value = "/do")
+    public String Login() {
+        return  "edit";
+    }
 
     @RequestMapping(value = "/edit")
     public void logn (@RequestParam( value = "blogTitle")String blogTitle,
