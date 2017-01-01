@@ -18,7 +18,7 @@ public class BlogService {
     private BlogMapping blogMapping;
 
 
-    public void insertBolg(String blogTitle,String blogContent ){
+    public void insertBolg(String blogTitle,String blogContent )throws  Exception{
         blogMapping.insertBlog(blogTitle,blogContent);
     }
 
